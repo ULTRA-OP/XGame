@@ -1,5 +1,3 @@
 # XGame
-
-# adult game 
-
-# legendx op baki sabhi topi
+# adult game
+##UNDER MAKING PLZ WEIT
