@@ -8,7 +8,7 @@ def new_user(id):
     id_list = [id]
     data.insert_one({"_id": "LEGENDX22", "user": id_list})
 def rem_user(id):
-  data.update_one({"_id": "LEGENDX22"}, {"$pull": {user: id}})
+  data.update_one({"_id": "LEGENDX22"}, {"$pull": {"user": id}})
 def all_users():
   pros = data.find_one({"_id": "LEGENDX22"})
   return list(pros["user"])
