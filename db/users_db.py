@@ -13,8 +13,8 @@ def all_users():
   pros = data.find_one({"_id": "LEGENDX22"})
   return list(pros["user"])
 def already_user(id):
-  k = X.find_one({"_id": "LEGENDX22"})
-  if id in k["user"]:
+  k = data.find_one({"_id": "LEGENDX22"})
+  if id in list(k["user"]):
     return True
   else:
     return False
