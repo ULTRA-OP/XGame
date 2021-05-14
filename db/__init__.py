@@ -15,10 +15,6 @@ try:
   import telethon
 except:
   os.system("pip install telethon")
-from telethon import TelegramClient as tg
 token = ch("TOKEN")
 api = ch("API_ID")
 hash = ch("API_HASH")
-bot = tg(api, hash).start(bot_token=token)
-if __name__ == "__main__":
-  bot.run_until_disconnected()
