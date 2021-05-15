@@ -9,7 +9,7 @@ def ch(var):
   return k
 mg = ch("MONGO_URI")
 database = client(mg)
-mongo = databse ["XGAME"]
+mongo = database ["XGAME"]
 # MONGO DONE
 try:
   import telethon
@@ -18,3 +18,5 @@ except:
 token = ch("TOKEN")
 api = ch("API_ID")
 hash = ch("API_HASH")
+from telethon import TelegramClient as tg
+bot = tg(api, hash).start(bot_token=token)
