@@ -1,58 +1,40 @@
 {
-  "name": "ULTRA X",
-  "description": "THE SUPER BOT MADED BY TEAM LEGEND AND TEAM ULTRA MANY MODULES AND SUPER BOT; JOIN @UltraXChat FOR HELP ",
-  "logo": "https://telegra.ph/file/949acd88c4b9cd4f72485.jpg",
+    "name": "Xgame Bot",
+    "description": "Python bot",
+    "logo": "",
     "keywords": [
-    "telegram",
-    "xgame_bot",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/ULTRA-OP/HEROKU/",
-  "website": "https://github.com/ULTRA-OP/HEROKU/",
-  "success_url": "https://t.me/ULTRAXCHAT",
-  "env": {
-    "API_ID": {
-      "description": "Enter your api id",
-      "value": ""
+        "telegram",
+        "telethon",
+        "telegram-bot"
+    ],
+    "repository": "https://github.com/ULTRA-OP/XGame",
+    "website": "t.me/LEGENDX22",
+    "success_url": "https://t.me/ULTRAXCHAT",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "OWNER ID ADD HERE",
+            "value": ""
+        },
+        "MONGO_URI": {
+            "description": "ADD MONGO URI HERE.",
+            "value": "True"
+        }
     },
-    "API_HASH": {
-      "description": "Enter your api hash",
-      "value": ""
-    },
-    "MONGO_URI": {
-      "description": "Enter your mongo uri",
-      "value": ""
-    },
-    "TOKEN": {
-      "description": "Enter Your bot token",
-      "value": "",
-      "required": true
-    }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  },{
-    "url":"https://github.com/amivin/aria2-heroku.git"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
-  },{
-     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
-  },{
-    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-  },{
-    "url": "heroku/python"
-  }]
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
