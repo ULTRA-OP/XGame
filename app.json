@@ -1,0 +1,46 @@
+{
+  "name": "ULTRA X",
+  "description": "THE SUPER BOT MADED BY TEAM LEGEND AND TEAM ULTRA MANY MODULES AND SUPER BOT; JOIN @UltraXChat FOR HELP ",
+  "logo": "https://telegra.ph/file/949acd88c4b9cd4f72485.jpg",
+    "keywords": [
+    "telegram",
+    "xgame_bot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/ULTRA-OP/HEROKU/",
+  "website": "https://github.com/ULTRA-OP/HEROKU/",
+  "success_url": "https://t.me/ULTRAXCHAT",
+  "env": {
+    "API_ID": {
+      "description": "Enter your api id",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Enter your api hash",
+      "value": ""
+    },
+    "MONGO_URI": {
+      "description": "Enter your mongo uri",
+      "value": ""
+    },
+    "TOKEN": {
+      "description": "Enter Your bot token",
+      "value": "",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+    "url": "heroku/python"
+  }]
+}
